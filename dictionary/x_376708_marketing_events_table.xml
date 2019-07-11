@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Marketing Events Table" max_length="40" name="x_376708_marketing_events_table" type="collection">
+        <element choice="1" label="Event type" max_length="40" name="event_type" type="choice">
+            <choice/>
+        </element>
+        <element label="Location" max_length="32" name="location" reference="x_376708_marketing_location__cmn_location_" type="reference"/>
+        <element display="true" label="Name" max_length="40" name="name" type="string"/>
+        <element label="Sponsor" max_length="32" name="sponsor" reference="x_376708_marketing_company__core_company_" type="reference"/>
+        <element label="Start date" max_length="40" name="start_date" type="glide_date"/>
+        <index name="index">
+            <element name="sponsor"/>
+        </index>
+        <index name="index2">
+            <element name="location"/>
+        </index>
+    </element>
+</database>
